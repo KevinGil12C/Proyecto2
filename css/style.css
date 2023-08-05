@@ -1,0 +1,233 @@
+p {
+  color: red;
+}
+
+.red {
+  height: 200px;
+  width: 100px;
+  background-color: red;
+}
+
+
+
+.table {
+  width: 100%;
+  border-spacing: 0;
+
+}
+
+.table td,
+.table th {
+  padding: 1em;
+  text-align: left;
+  border-spacing: 0;
+}
+
+/*BOrde solido*/
+td {
+  border-spacing: 0;
+  font-weight: 700;
+}
+
+.fa-star {
+  color: #ffc400;
+}
+
+/* Estilo para el botón primario */
+.btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Estilo para el botón primario al pasar el cursor por encima */
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo para el botón primario cuando está presionado */
+.btn-primary:active {
+  background-color: #003f80;
+}
+
+/* Estilo para el botón primario cuando está deshabilitado */
+.btn-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.title {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.title-item {
+  /*border-bottom-style: solid;
+  border-width: 3px;
+  border-color: #c6426c;
+  padding: 1em;*/
+  border-bottom: solid 3px #c6426e;
+  /*box-shadow diferenciaHorizontal diferenciaVewrtical dewsenfoque 
+  
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);*/
+
+  font-size: 2em;
+  border-bottom: #c6426e solid 2px;
+  padding-bottom: 1em;
+}
+
+.position {
+  background-color: #c6426e;
+  color: white;
+  padding: 10px;
+  margin-right: 1em;
+}
+
+
+/*Definición de los colores*/
+/*
+   Rosa #C6426E
+   Morado #642B73
+   Negro #999
+   Gris #f5f5f5
+  
+  */
+
+.container {
+  background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  max-width: 960px;
+  max-height: 900px;
+  width: 100%;
+  height: 80%;
+  background-color: white;
+  border-radius: 4px;
+  position: relative;
+  padding: 1.8em;
+  overflow: scroll;
+}
+
+.action {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+
+.close {
+  height: 40px;
+  width: 40px;
+  color: white;
+  border-radius: 50%;
+  background-color: #c6426e;
+  display: inline-block;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  font-weight: 300;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*even para impares*/
+.table tr:nth-child(even) {
+  background-color: #f3e5f5;
+}
+
+/*Opacidad cuando pasa el cursor por el enlace*/
+a:hover {
+  opacity: 0.8;
+}
+
+a:focus {
+  background-color: red;
+}
+
+/*Conf de mobile firt*/
+.content {
+  padding: 1em;
+}
+
+td {
+  display: block;
+  width: 100%;
+}
+
+td:nth-of-type(1) {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #642b73;
+}
+
+th {
+  display: none;
+}
+
+/*
+Mediaquery
+Especificar propiedades si una condicion se cumple
+*/
+@media (min-width:900px) {
+  th {
+    display: table-cell;
+  }
+
+  td {
+    width: auto;
+    display: table-cell;
+  }
+
+  td:nth-of-type(1) {
+    font-size: 1em;
+  }
+
+  .content {
+    padding: 1.8em;
+  }
+}
+
+@media (min-width:500px) {
+  .content {
+    height: 500px;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+.text {
+  text-align: left;
+  text-justify: distribute-all-lines;
+  font-size: 1.3em;
+  padding: 1em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+h4 {
+  font-weight: 700;
+  font-style: italic;
+  font-size: 20px;
+  text-align: justify;
+}
+.centrar-imagen {
+  display: block; /* Convierte la imagen en un bloque para poder aplicar márgenes automáticos */
+  margin: 0 auto; /* Margen automático horizontal para centrar la imagen */
+  max-width: 100%; /* Asegura que la imagen no se salga del contenedor */
+  max-height: 100%; /* Asegura que la imagen no se salga del contenedor */
+}
